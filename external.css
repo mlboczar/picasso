@@ -1,0 +1,82 @@
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 15px;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.circle1 {
+    position:absolute;
+    height: 50px;
+    width: 50px;
+    background-color: purple;
+    border-radius: 50%;
+    z-index: 5;
+    left: 50px;
+    top: 100px;
+}
+
+.circle2 {
+    position:absolute;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(228, 83, 83, 0.5);
+    border-radius: 50%;
+    z-index: 5;
+    left: 40px;
+    top: 110px;
+}
+
+.circle3 {
+    position: absolute;
+    height: 16em;
+    width: 16em;
+    background-color: rgba(83, 218, 228, 0.5);
+    border-radius: 50%;
+    z-index: 5;
+    left: 15%;
+    top: 5%;
+}
+
+.triangle-down {
+    position:absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid rgba(38, 0, 128, 0.479);
+    right: 1%;
+    top: 10%;
+}
+
+.one {
+    background-color: red;
+    margin: 5px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    z-index: 1;   
+}
+
+.two {
+    background-color: orange;
+    margin: 5px;
+}
+
+.three {
+    background-color: yellow;
+    margin: 5px;
+}
+
+.four {
+    background-color: green;
+    margin: 5px;
+    grid-column: 1 / 4;
+    height: 300px;
+}
+
+.five {
+    background-color: blue;
+    grid-column: 1 / 4;
+}
+
